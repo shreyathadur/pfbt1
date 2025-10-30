@@ -10,6 +10,9 @@ export default defineConfig(({ mode }) => ({
     port: 8080,
     allowedHosts: ["pfbt1.onrender.com"],
   },
+  preview: {
+    allowedHosts: ["pfbt1.onrender.com"],
+  },
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
